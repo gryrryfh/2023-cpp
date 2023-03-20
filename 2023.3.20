@@ -1,0 +1,151 @@
+퀴즈 3개+2개
+```
+#include <iostream>
+using namespace std;
+class CPoly{ // 상속 자기자신과 자녀에게 물려줄수있다???//
+protected:
+int w,h;};
+class CRect{
+	int w, h;
+	public:
+		CRect(int x, int y):w(x), h(y){}
+		void Area(){cout <<w*h<< endl;}
+};
+class CTri{
+	int w, h;
+	public:
+		CTri(int x, int y):w(x), h(y){}
+		void Area(){cout <<w*h/2<< endl;}
+};
+int main(){
+	CRect r(1,2);
+	CTri t(2,3);
+	r.Area();
+	t.Area();
+	return 0;
+}
+
+//두 수를 더하는 함수를 탬플릿으로 구현하시오//
+#include <stdio.h>
+template <class T>
+T Add(T a, T b){
+	return a+b;
+}
+
+int main(){
+	printf("%d\n", Add(2,3));
+	printf("%f\n", Add(2.1, 3.1));
+	printf("%d\n", Add<int>(2,3));
+	printf("%f\n", Add<double>(2.1, 3.1));
+	return 0;
+}
+
+//연산자 오버로딩 퀴즈//
+#include <iostream>
+using namespace std;
+class CPnt{
+int x, y;
+public:
+	CPnt(){ //디폴트생성자 생성//
+	}
+	CPnt(int _x, int _y):x(_x),y(_y){ //초기값 1 추가//
+	}
+	CPnt operator+(CPnt r){
+		return CPnt(x+r.x, y+r.y);
+	}
+		void pr(){
+			cout << x << ','<< y <<endl;
+		}
+	};
+	
+	int main(){
+		CPnt p1(2,3), p2(3,4), p3;
+		//p3 = p1.operator+(p2);//
+		p3=p1+p2;
+		p3.pr();
+		return 0;
+		}
+	
+	#include <iostream>
+using namespace std;
+class CPnt{
+int x, y;
+public:
+	CPnt(){ //디폴트생성자 생성//
+	}
+	CPnt(int _x, int _y):x(_x),y(_y){ //초기값 1 추가//
+	}
+	CPnt Add(CPnt r){
+		return CPnt(x+r.x, y+r.y);
+	}
+		void pr(){
+			cout << x << ','<<y<<endl;
+		}
+	};
+	
+	int main(){
+		CPnt p1(2,3), p2(3,4), p3;
+		p3=p1.Add(p2);
+		p3.pr();
+			return 0;
+		}
+	
+	#include <iostream>ㅐ
+using namespace std;
+class CRect{
+int w, h;
+public:
+	CRect(int _w=0, int _h=0):w(_w),h(_h){
+	}
+	CRect Add(CRect r){
+		return(CRect(w+r.w, h+r.h)/
+	}
+		void pr(){
+			cout << w << ','<<h<<endl;
+		}
+	};
+	
+	int main(){
+		CRect r1(2,3), r2(3,4), r3;
+		r3=r1.Add(r2);
+		r3.pr();
+			return 0;
+		}
+	
+	#include <iostream>
+using namespace std;
+class CRect{
+int w, h;
+public:
+	CRect(int w = 0, int h = 0){
+		this-> w = _w; this-> h = _h;
+	}
+	CRect Add(CRect r){
+		CRect t;
+		t.w = w+r.w; t.h = h+r.h;
+		return(t);
+	}
+		void pr(){
+			cout << w << ','<<h<<endl;
+		}
+	};
+	
+	int main(){
+		CRect r1(2,3), r2(3,4), r3;
+		r3=r1.Add(r2);
+		r3.pr();
+			return 0;
+		}
+	
+	#include <iostream>
+using namespace std;
+class Rect{
+	int w, h;
+	public:
+		Rect(){w=2, h=3;}
+		Area(){ cout << w*h << '\n';}		
+};
+int main(){
+	Rect r;
+	r.Area();}
+  ```
