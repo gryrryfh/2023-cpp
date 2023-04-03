@@ -42,19 +42,20 @@ int main(){
 }
 ```
 
-# 1. 클래스: CRect, CCircle, CPoly
+### 설명
+#### 1. 클래스: CRect, CCircle, CPoly
 •  C++의 객체 지향 프로그래밍(OOP)은 클래스를 기반으로 합니다.
 •  클래스는 객체를 만들기 위한 설계도와 같은 역할을 합니다.
 •  위 코드에서 CRect, CCircle, CPoly는 클래스입니다.
-2. 상속 (Inheritance)
+#### 2. 상속 (Inheritance)
 •  클래스는 다른 클래스에서 속성과 기능을 물려받을 수 있습니다.
 •  위 코드에서 CRect와 CCircle 클래스는 CPoly 클래스를 상속받았습니다.
 •  CRect와 CCircle 클래스는 CPoly 클래스에서 상속받은 w,h 변수를 사용할 수 있습니다.
-3. 가상 함수 (Virtual Functions)
+#### 3. 가상 함수 (Virtual Functions)
 •  가상 함수는 런타임 시점에 함수를 찾아가는 데 사용됩니다.
 •  위 코드에서 CPoly 클래스의 Area() 함수는 가상 함수로 선언되어 있습니다.
 •  이를 통해 CRect와 CCircle 클래스에서 Area() 함수를 다양하게 구현할 수 있습니다.
-4. 추상 클래스 (Abstract Class)
+#### 추상 클래스 (Abstract Class)
 •  CPoly 클래스는 순수 가상 함수인 Area() 함수를 가지고 있으며, 이를 통해 CPoly 클래스는 추상 클래스입니다.
 •  추상 클래스는 객체를 직접 만들 수 없으며, 다른 클래스에서 상속하여 사용해야 합니다.
 5. 오버라이딩 (Overriding)
