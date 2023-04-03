@@ -3,22 +3,22 @@
 #include<iostream>
 #define PI 3.14
 using namespace std;
-class CPoly{  //클래스 CPoly, 추상 클래스 
+class CPoly{                                                                           //클래스 CPoly, 추상 클래스 
     protected:
         int w,h;
     public:
-        virtual double Area() = 0; // 순수가상함수 - 상속받는 자식클래스에 사용 안할경우 에러가 뜸   
+        virtual double Area() = 0;                                                     // 순수가상함수 - 상속받는 자식클래스에 사용 안할경우 에러가 뜸   
 };
-class CRect:public CPoly{  //CPoly를 상속받은 클래스 CRect, w,h변수를 사용할 수 있다 
+class CRect:public CPoly{                                                              //CPoly를 상속받은 클래스 CRect, w,h변수를 사용할 수 있다 
     public:
         CRect(int _w, int _h){
             w=_w, h=_h;
         }
-        double Area(){ //오버라이딩 - CPoly 클래스에서 상속받은 Area() 함수 재정의
+        double Area(){                                                                //오버라이딩 - CPoly 클래스에서 상속받은 Area() 함수 재정의
             return w*h;
         }
-        friend ostream& operator<<(ostream &os, CRect &r){  //friend함수  -클래스 외부에서 private변수에 접근하도록 허용  
-            os<< r.w << "," << r.h;//연산자 오버로딩 - << 연산자를 CRect 클래스에서 재정의
+        friend ostream& operator<<(ostream &os, CRect &r){                            //friend함수  -클래스 외부에서 private변수에 접근하도록 허용  
+            os<< r.w << "," << r.h;                                                   //연산자 오버로딩 - << 연산자를 CRect 클래스에서 재정의
             return os;
         }
 };
