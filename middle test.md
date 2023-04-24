@@ -25,14 +25,19 @@ const==바꾸지마세요 라는뜻
 
 stl에 대해서 vector를 중심으로
 
+```
 c언어와 c++의 차이? 새로운 키워드??
 class public private protected new delete,
 reinterpret_cast, static_cast, template, namespace
-
+```
+	
+```
 참조에 의한 호출???callbyreference
-
-c++장점들?10가지정도??
-
+```
+	
+```
+c++장점 5가지이상
+```
 
 
 코딩은 후위증가, <<
@@ -40,9 +45,10 @@ c++장점들?10가지정도??
 템플릿박스
 cpoly crect ctri 4문제?
     
-##### 람다함수 두수더하기를 람다함수로 제목 안적고 
-auto add = [](int a, int b){return a+b;};
+
 ```
+	##### 람다함수 두수더하기를 람다함수로 제목 안적고 
+auto add = [](int a, int b){return a+b;};
     #include <iostream>
 using namespace std;
 int main(){
@@ -63,8 +69,11 @@ CRect* p = new CRect(3,4);
 ```
 stl의 장점 5가지
 유연성, 표준화, 생산성 향상, 코드 재사용성, 성능향상
-
 ```
 	
+```
+stl의 주요 구성요소 3가지
+1. 컨테이너, 2. 알고리즘, 3. 반복자
+```
 
-	
+
