@@ -33,15 +33,15 @@ reinterpret_cast, static_cast, template, namespace
 
 c++장점들?10가지정도??
 
-두수더하기를 람다함수로 제목 안적고 
-auto add = [](int a, int b){return a+b;};
+
 
 코딩은 후위증가, <<
 포인터
 템플릿박스
 cpoly crect ctri 4문제?
     
-##### 람다함수 auto add
+##### 람다함수 두수더하기를 람다함수로 제목 안적고 
+auto add = [](int a, int b){return a+b;};
 ```
     #include <iostream>
 using namespace std;
@@ -54,4 +54,17 @@ int main(){
 	return 0;
 	}
 ```
-    
+
+```
+ crect포인터를 써서
+CRect* p = new CRect(3,4);
+```
+	
+```
+stl의 장점 5가지
+유연성, 표준화, 생산성 향상, 코드 재사용성, 성능향상
+
+```
+	
+
+	
