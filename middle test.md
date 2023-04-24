@@ -1,7 +1,7 @@
 시험
 dynamic memory 동적메모리
 이것도 코드짜기인가???
-
+```
 static 코드주고 대답하기
 #include <iostream>
 class MyClass {
@@ -20,6 +20,7 @@ int main() {
     return 0;
 }
 요런 느낌??
+```
 
 const==바꾸지마세요 라는뜻
 
@@ -43,9 +44,7 @@ c++장점 5가지이상
 코딩은 후위증가, <<
 abstract overloading
 ```
-```
-포인터
-```
+
 ```
 템플릿박스
 ```
@@ -84,7 +83,10 @@ stl의 주요 구성요소 3가지
 1. 컨테이너, 2. 알고리즘, 3. 반복자
 ```
 ```
-static, const, 
+static 
+```
+```
+const
 ```
 코딩 4문제
 아닌거 10문제
