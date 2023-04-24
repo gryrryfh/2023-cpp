@@ -41,16 +41,17 @@ auto add = [](int a, int b){return a+b;};
 템플릿박스
 cpoly crect ctri 4문제?
     
+##### 람다함수 auto add
+```
+    #include <iostream>
+using namespace std;
+int main(){
+	auto add=[](int a, int b)-> int { //특히 요부분
+	return a+b;
+	};
+	int result =add(3,4);
+	cout << "3+4="<<result<<endl;
+	return 0;
+	}
+```
     
-    단답형
-원본을 지적해서 원본과 같이된다?
-참조에 의한 호출 
-
-4문1택
-local변수를 global변수처럼 사용하는것
-1. static 2. stack 3. const 4. dynamic memory
-
-참/거짓
-static을 사용할때 생성자와 소멸자는 자동으로 소멸된다
-
-static은 단 한번만 초기화한다.
