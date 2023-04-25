@@ -42,9 +42,65 @@ int main() {
 }
 ```
 #### 3.오퍼레이터overloading
+```
+#include <iostream>
 
+using namespace std;
+
+class CPnt {
+public:
+    CPnt(int x = 0, int y = 0) : x(x), y(y) {}
+
+    friend ostream& operator<<(ostream& os, const CPnt& p);
+    friend istream& operator>>(istream& is, CPnt& p);
+
+private:
+    int x, y;
+};
+
+ostream& operator<<(ostream& os, const CPnt& p) {
+    os << "(" << p.x << ", " << p.y << ")";
+    return os;
+}
+
+istream& operator>>(istream& is, CPnt& p) {
+    is >> p.x >> p.y;
+    return is;
+}
+
+int main() {
+    CPnt p1(3, 4);
+    cout << "Point 1: " << p1 << endl;
+
+    CPnt p2;
+    cout << "Enter x and y for Point 2: ";
+    cin >> p2;
+    cout << "Point 2: " << p2 << endl;
+
+    return 0;
+}
+```
 #### 4.생성자함수오버로딩
-
+```
+#include <iostream>
+using namespace std;
+int op(int a, int b)
+{
+  return (a+b);
+}
+double op(double a, double b)
+{
+  return (a-b);
+}
+int main ()
+{
+  int x=5,y=2;
+  double n=5.0,m=2.0;
+  cout << op(x,y) << '\n';
+  cout << op(n,m) << '\n';
+  return 0;
+}
+```
 나머지 8문제
 
 #### 1.참조에 의한 호출
