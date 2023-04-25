@@ -42,7 +42,7 @@ int main() {
 }
 ```
 #### 3.오퍼레이터overloading
-```
+```c++
 #include <iostream>
 
 using namespace std;
@@ -81,7 +81,7 @@ int main() {
 }
 ```
 #### 4.생성자함수오버로딩
-```
+```c++
 #include <iostream>
 using namespace std;
 int op(int a, int b)
@@ -104,7 +104,7 @@ int main ()
 나머지 8문제
 
 #### 1.참조에 의한 호출
-```
+```c++
 #include<iostream>
 void Foo(int& a){
 	a = a + 100;
@@ -116,7 +116,7 @@ int main(){
 }
 ```
 #### 2.const, dynamic memory
-```
+```c++
 #include <iostream>
 
 int main() {
