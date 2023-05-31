@@ -1,0 +1,119 @@
+1~9까지
+## 1 벡터 나타내기 
+```std::vector<int> numbers = {10, 5, 30, 7, 22};```
+## 2 
+```
+#include<iostream>
+void Foo(int& a){ // 요부분 나옴
+	a = a + 100;
+}
+int main(){
+	int a = 5;
+	Foo(a);
+	std::cout << a;
+}
+```
+## 3 포인터 나타내기
+```
+#include <iostream>
+using namespace std;
+int main(){
+	int a=3, b=4;
+	int* p; //요부분 나옴 빈칸채우기
+	p = &a; //초기화 
+	cout << *p << endl;
+  ```
+}
+## 4 
+대충 벡터 나옴 아마도?
+## 5
+```
+#include <iostream>
+#include <vector> //요거 채우기
+#include <algorithm>// 요거 채우기
+
+int main() {
+  std::vector<int> numbers = {10, 5, 30, 7, 22}; // 요거 채우기
+  
+  std::for_each(numbers.begin(), numbers.end(), [](int num) {
+    if (num % 2 == 0) {
+      std::cout << num << ' ';
+    }
+  });
+
+  return 0;
+}
+```
+
+## 6
+```
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+  std::vector<int> numbers = {10, 5, 30, 7, 22}; // 요거 채우기
+  
+  std::for_each(numbers.begin(), numbers.end(), [](int num) {
+    if (num % 2 == 0) {
+      std::cout << num << ' ';
+    }
+  });
+
+  return 0;
+}
+```
+
+## 7
+```
+#include <iostream>
+#include <string>
+
+class Animal {
+private:
+    std::string name;
+public:
+    void setName(std::string n) { name = n; }
+    std::string getName() { return name; }
+
+    // 가상 함수로 선언하여 다형성을 가능하게 함.
+    virtual void makeSound() = 0; // 순수 가상 함수로 선언.
+};
+
+class Dog : public Animal {
+public:
+    void makeSound() {
+        std::cout << getName() << " says: Woof!" << std::endl;
+    }
+};
+
+class Cat : public Animal {
+public:
+    void makeSound() {
+        std::cout << getName() << " says: Meow!" << std::endl;
+    }
+};
+
+int main() {
+    Dog myDog;
+    myDog.setName("Rover");
+    myDog.makeSound();
+
+    Cat myCat;
+    myCat.setName("Mittens");
+    myCat.makeSound();
+
+    return 0;
+}
+```
+## 8 포인터 함수
+```
+#include <iostream>
+int add(int a, int b){return a+b;}
+int main(){
+int (*padd)(int , int );
+padd = add;
+cout << padd(3,4) << endl;
+return 0;}
+```
+## 9 c++특징 10가지
