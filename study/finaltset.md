@@ -33,4 +33,4 @@ int main() {
 ```
 * 기말 예상문제: 1) https://www.w3schools.com/cpp/  퀴즈, Exercises 2문항/25, Exercesis 3문항
 * 전처리기의 종류를 5가지 이상 기억(#include, #define, #elif, #endif, ???)
-* 
+* 퀵정렬
