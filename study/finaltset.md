@@ -35,3 +35,26 @@ int main() {
 * 전처리기의 종류를 5가지 이상 기억(#include, #define, #elif, #endif, ???)
 * 퀵정렬
 for_each도 무조건 나옴
+* 바인딩 무조건 나옴
+```
+#include <iostream>
+#include <vector>
+#include <algorithm> // for std::transform
+
+int main() {
+    std::vector<int> nums = {1, 2, 3, 4, 5};
+    std::vector<int> result(nums.size());
+    
+    std::transform(nums.begin(), nums.end(), result.begin(), [](int x) {
+        return x * x;
+    });
+    
+    for (int i : result) {
+        std::cout << i << " ";
+    }
+
+    return 0;
+}
+```
+
+
