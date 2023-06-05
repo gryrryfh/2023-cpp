@@ -105,6 +105,13 @@ Kotlin: Kotlin은 안드로이드 애플리케이션 개발을 위한 공식적�
 
 * 템플릿도?
 * 소팅 안나옴 대신 람다함수쓰는 소팅 나옴
-* 
+```void CMFCApplication3Dlg::OnBnClickedButton1()
+{
+int a = GetDlgItemInt(IDC_EDIT1);
+int b = GetDlgItemInt(IDC_EDIT2);
+int c = a + b;
+SetDlgItemInt(IDC_EDIT3, c);
+}
+```
 
 
