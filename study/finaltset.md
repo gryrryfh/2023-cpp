@@ -105,6 +105,28 @@ Kotlin: Kotlin은 안드로이드 애플리케이션 개발을 위한 공식적�
 
 * 템플릿도?
 * 소팅 안나옴 대신 람다함수쓰는 소팅 나옴
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+int static cmp (const void* a, const void* b)
+{
+    if (*(int*)a > *(int*)b)      return  1;
+    else if (*(int*)a < *(int*)b) return -1;
+    else                          return  0;
+}
+void main()
+{
+    int a[] = {3, 1, 2, 5, 4};
+    int s = sizeof(a) / sizeof(int);
+    int i;
+    for (i = 0; i < s; i++) printf("%d ", a[i]);
+    printf(":정렬전\n");
+    qsort(a, s, sizeof(int), cmp);
+    for (i = 0; i < s; i++) printf("%d ", a[i]);
+    printf(":정렬후\n");
+}
+```
 ```void CMFCApplication3Dlg::OnBnClickedButton1()
 {
 int a = GetDlgItemInt(IDC_EDIT1);
