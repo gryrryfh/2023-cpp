@@ -174,7 +174,17 @@ int main() {
     } else {
         std::cout << "The word 'Test' was not found in the vector." << std::endl;
     }
-    
+
     return 0;
 }
 ```
+* mfc microsoft foundation class 이거 풀네임 무조건 나옴
+* winui3=mfc+winui2 그림주고 칸채우기 오른쪽 그림 3개
+![image](https://github.com/gryrryfh/2023-cpp/assets/50912987/37a44bcf-6030-441d-891d-d46eb411151d)
+시험나옴 opencv가 뭘까?(설명해라)
+* c++와 연결하는 데이터베이스 3가지 말해라
+* template, pure virtual function 쓸줄 아느냐
+* cpoly에서 crect, ctri상속받아 메인에서 
+
+
+
