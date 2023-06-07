@@ -109,7 +109,7 @@ Kotlin: Kotlin은 안드로이드 애플리케이션 개발을 위한 공식적�
 ```
 #include <stdio.h>
 #include <stdlib.h>
-int static cmp (const void* a, const void* b)
+int static cmp (const void* a, const void* b) //요부분 비워놓고 채우기
 {
     if (*(int*)a > *(int*)b)      return  1;
     else if (*(int*)a < *(int*)b) return -1;
@@ -136,4 +136,45 @@ SetDlgItemInt(IDC_EDIT3, c);
 }
 ```
 
+* 포인터의 값을 표현 == *p
+* 형변환해야됨(int *)p
 
+find 적어넣느냐 nums.begin, nums.end채워넣기 무조건 나옴
+include <vector, algorithm>이거 아느냐
+```
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<int> nums = {1, 2, 3, 4, 5};
+    
+    auto it = std::find(nums.begin(), nums.end(), 3);
+    
+    if (it != nums.end()) {
+        std::cout << "Number 3 was found in the vector." << std::endl;
+    } else {
+        std::cout << "Number 3 was not found in the vector." << std::endl;
+    }
+    
+    return 0;
+}
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+
+int main() {
+    std::vector<std::string> words = {"Hello", "World", "Test", "Example"};
+    
+    auto it = std::find(words.begin(), words.end(), "Test");
+    
+    if (it != words.end()) {
+        std::cout << "The word 'Test' was found in the vector." << std::endl;
+    } else {
+        std::cout << "The word 'Test' was not found in the vector." << std::endl;
+    }
+    
+    return 0;
+}
+```
